@@ -2,7 +2,7 @@
 
 > **Note** This private hacking software is currently being worked on to prevent being banned, as a result all hacks have been removed for a revamp!
 
-Welcome to the Blooket Hacking Software made by @CommonCodingBros76!
+Welcome to the Blooket Hacking Software made by @CommonCodingBros76 & @CommonHacking!
 
 We are always working on patching bugs and fixing stuff!
 If you ever have any ideas just post an issue.
