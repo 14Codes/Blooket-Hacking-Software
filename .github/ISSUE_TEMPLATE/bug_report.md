@@ -1,38 +1,53 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+name: Bug Report
+description: Report an issue or problem with a script
+title: "BUG: (script name)"
+labels: ["bug"]
+assignees:
+  - 14Codes
+body:
+  - type: input
+    id: script
+    attributes:
+      label: Script
+      description: Which script is causing the problem?
+      placeholder: scriptname.js
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What's the problem with the script?
+      placeholder: Describe the issue
+    validations:
+      required: true
+  - type: dropdown
+    id: method
+    attributes:
+      label: Method
+      description: How did you run the script?
+      multiple: true
+      options:
+        - Imported Bookmarklets.html
+        - "Put 'javascript:(code)' in the url bar or a bookmark"
+        - Pasted script into console
+        - Other (described in Extra Info section)
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Unobfuscated or obfuscated
+      multiple: true
+      options:
+        - Unobfuscated
+        - Obfuscated
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Extra Info
+      description: Any extra info (ie screenshots or any important info)
+    validations:
+      required: false
