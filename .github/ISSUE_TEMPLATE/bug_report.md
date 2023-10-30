@@ -1,30 +1,53 @@
-name: Suggestion
-description: Suggest a cheat or script
-title: "IDEA: Script idea name"
-labels: ["enhancement"]
+name: Bug Report
+description: Report an issue or problem with a script
+title: "BUG: (script name)"
+labels: ["bug"]
+assignees:
+  - 05Konz
 body:
   - type: input
-    id: gamemode
+    id: script
     attributes:
-      label: Gamemode
-      description: Gamemode for cheat to be for
-      placeholder: Gamemode
+      label: Script
+      description: Which script is causing the problem?
+      placeholder: scriptname.js
+    validations:
+      required: true
   - type: textarea
-    id: function
+    id: problem
     attributes:
-      label: Function
-      description: What does the script do?
-      placeholder: Script function
+      label: Problem
+      description: What's the problem with the script?
+      placeholder: Describe the issue
     validations:
       required: true
   - type: dropdown
-    id: confirm
+    id: method
     attributes:
-      label: FaQ
-      description: Please make sure to read [the FaQ](https://github.com/05Konz/Blooket-Cheats#information) before submitting any suggestions
+      label: Method
+      description: How did you run the script?
       multiple: true
       options:
-        - I have not read the FaQ
-        - I have read the FaQ and my suggestion has not already been asked for or isn't possible
+        - Imported Bookmarklets.html
+        - "Put 'javascript:(code)' in the url bar or a bookmark"
+        - Pasted script into console
+        - Other (described in Extra Info section)
     validations:
       required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Unobfuscated or obfuscated
+      multiple: true
+      options:
+        - Unobfuscated
+        - Obfuscated
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Extra Info
+      description: Any extra info (ie screenshots or any important info)
+    validations:
+      required: false
