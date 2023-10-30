@@ -4,6 +4,7 @@ title: "BUG: (script name)"
 labels: ["bug"]
 assignees:
   - 14Codes
+
 body:
   - type: input
     id: script
