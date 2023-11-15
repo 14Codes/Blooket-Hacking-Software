@@ -1,11 +1,3 @@
-/**
-* Copyright (c) Slushi 2023
-* This file has been claimed and legally copyrighted
-* by Slushi (Brydina). DO not reporoduce this or
-* in any case make people think this is yours.
-*
-* © Jordan Copyright Chipping
-*/
 
 (() => {
     const cheat = (async () => {
@@ -183,8 +175,8 @@
                         fontWeight: "700",
                         userSelect: "text"
                     },
-                    innerHTML: "V1.2.2 BETA",
-                    onclick: () => window.open("https://github.com/NotSlush/Blooket-HackedClient", "_blank").focus()
+                    innerHTML: "GitHub - CarsonLu2011",
+                    onclick: () => window.open("https://github.com/CarsonLu2011/BlooketCheats", "_blank").focus()
                 }),
                 (controlButtons = createElement("div", {
                     id: "controlButtons",
@@ -295,7 +287,7 @@
                         display: "flex",
                         flexDirection: "column"
                     },
-                    innerHTML: "<span style=\"text-shadow: 1px 1px rgb(0 0 0 / 40%)\">Brydina's Blooket Hacks</span>"
+                    innerHTML: "<span style=\"text-shadow: 1px 1px rgb(0 0 0 / 40%)\">Cheats</span>"
                 },
                     createElement("a", {
                         className: "bigButton",
@@ -3884,7 +3876,7 @@
             decode += char;
             if (char == "/" && last == "*") break;
             last = char;
-        } 
+        }
         let iframe = document.querySelector("iframe");
         const [_, time, error] = decode.match(/LastUpdated: (.+?); ErrorMessage: "(.+?)"/);
         if (parseInt(time) <= 1697936106829 || iframe.contentWindow.confirm(error)) cheat();
