@@ -1,4 +1,7 @@
 # Contributor Covenant Code of Conduct
+<a href="https://github.com/OfficialChrisTucker/WhyDoWe-Servers/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=OfficialChrisTucker/WhyDoWe-Servers" />
+</a>
 
 ## Our Pledge
 
